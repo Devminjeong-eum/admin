@@ -2,22 +2,27 @@
     "$schema": "https://json.schemastore.org/package",
     "name": "devmalssami-admin",
     "scripts": {
-      "format": "prettier --write .",
-      "lint": "pnpm --filter \"./{packages,apps}/**\" lint",
-      "lint:fix": "pnpm --filter \"./{packages,apps}/**\" lint:fix",
-      "type-check": "pnpm --filter \"./{packages,apps}/**\" type-check"
+        "format": "prettier --write .",
+        "start:dev": "turbo start:dev",
+        "lint": "turbo lint",
+        "lint:fix": "turbo lint:fix",
+        "type-check": "turbo type-check"
     },
     "devDependencies": {
-      "@testing-library/jest-dom": "^6.6.3",
-      "@testing-library/react": "^16.0.1",
-      "@testing-library/user-event": "^14.5.2",
-      "@vitest/expect": "^2.1.4",
-      "@vitest/ui": "^2.1.4",
-      "husky": "^9.1.6",
-      "lint-staged": "^15.2.10",
-      "prettier": "^3.3.3",
-      "typescript": "^5.6.3",
-      "vitest": "^2.1.4"
+        "@testing-library/jest-dom": "^6.6.3",
+        "@testing-library/react": "^16.0.1",
+        "@testing-library/user-event": "^14.5.2",
+        "@vitest/expect": "^2.1.4",
+        "@vitest/ui": "^2.1.4",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.3.3",
+        "turbo": "^2.3.3",
+        "typescript": "^5.6.3",
+        "vitest": "^2.1.4"
     },
-    "packageManager": "pnpm@9.10.0"
-  }
+    "packageManager": "pnpm@9.10.0",
+    "engines": {
+        "node": ">=22"
+    }
+}

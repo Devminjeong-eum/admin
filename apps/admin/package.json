@@ -1,11 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "devmalssami-admin-app",
+  "name": "admin",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
+    "start:dev": "NODE_ENV=development vite",
     "preview": "vite preview",
     "lint": "eslint --cache",
     "lint:fix": "pnpm lint --fix",

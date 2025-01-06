@@ -1,0 +1,21 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalEnv": ["NODE_ENV"],
+    "tasks": {
+        "lint": {
+			"outputs": ["libs/**", "src/**"]
+		},
+        "lint:fix": {
+			"outputs": ["libs/**", "src/**"]
+		},
+        "type-check": {
+            "dependsOn": []
+        },
+        "start:dev": {
+			"dependsOn": ["lint"],
+			"cache": false,
+			"persistent": true,
+			"interruptible": true
+		}
+    }
+}
